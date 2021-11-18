@@ -102,18 +102,18 @@ namespace text_based_adventure
             {
                 Program.currentPlayer.AddDrink(40);
                 Program.currentPlayer.AddFood(30);
-                Program.currentPlayer.Heal(10);
+                Program.currentPlayer.ChangeHealth(10);
             }
             else if (userInput == "2")
             {
                 Program.currentPlayer.AddFood(30);
-                Program.currentPlayer.Heal(5);
+                Program.currentPlayer.ChangeHealth(5);
                 Program.currentPlayer.AddItem("Wasserflasche (+40)");
             }
             else if (userInput == "3")
             {
                 Program.currentPlayer.AddDrink(40);
-                Program.currentPlayer.Heal(5);
+                Program.currentPlayer.ChangeHealth(5);
                 Program.currentPlayer.AddItem("Proteinriegel (+30)");
             }
             else if (userInput == "4")

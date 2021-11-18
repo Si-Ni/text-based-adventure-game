@@ -13,7 +13,7 @@ namespace text_based_adventure
         public int strength = 5;
         public int nahrung = 60;
         public int hydration = 50;
-        List<string> items = new List<string> { "Brieftasche", "Büroklammer", "Taschentücher", "Feuerzeug" };
+        public List<string> items = new List<string> { "Brieftasche", "Büroklammer", "Taschentücher", "Feuerzeug" };
 
         public List<string> GetPlayerItems()
         {
@@ -53,7 +53,7 @@ namespace text_based_adventure
                 this.hydration = 100;
             }
         }
-        public void Heal(int healWert)
+        public void ChangeHealth(int healWert)
         {
             this.health += healWert;
             if (this.health > 100)

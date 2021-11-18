@@ -88,7 +88,7 @@ namespace text_based_adventure
                 if (userInput != "" && userInput != " ")
                 {
                     Program.currentPlayer.username = userInput;
-                    Console.WriteLine("Ein angenehmes Gefühl den eigen Namen zu kennen, nicht wahr " + Program.currentPlayer.username + " ?");
+                    Console.WriteLine("Ein angenehmes Gefühl den eigen Namen zu kennen, nicht wahr " + Program.currentPlayer.username + "?");
                     Console.WriteLine("------------------------------------------------------------");
                     TaschenPrüfen();
                 } else
